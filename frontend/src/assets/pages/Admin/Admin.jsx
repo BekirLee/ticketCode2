@@ -6,7 +6,7 @@ import { deleteProduct, fetchProducts } from "../../features/products/Products";
 
 const Admin = () => {
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.products);
+  const products = useSelector((state) => state.products.products);
 
   useEffect(() => {
     dispatch(fetchProducts());

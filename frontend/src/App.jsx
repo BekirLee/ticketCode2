@@ -10,6 +10,8 @@ import Contact from "./assets/pages/Contact";
 import Services from "./assets/pages/Services";
 import Basket from "./assets/pages/Basket";
 import Admin from "./assets/pages/Admin/Admin";
+import Pages from "./assets/pages/Pages";
+import Latest from "./assets/pages/Latest";
 
 function App() {
   let router = createBrowserRouter([
@@ -32,6 +34,14 @@ function App() {
         {
           path: "/basket",
           element: <Basket />,
+        },
+        {
+          path: "/pages",
+          element: <Pages />, 
+        },
+        {
+          path: "/latest",
+          element: <Latest />,
         },
         {
           path: "/admin",
